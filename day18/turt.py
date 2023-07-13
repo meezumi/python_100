@@ -10,14 +10,9 @@ from turtle import Turtle, Screen
 #   timmy.right(90)
   
 # we can give alias to the modules imported 
-import turtle as t
-
-tim = t.Turtle()
-
-import heroes
-print(heroes.gen())
-  
-
+# import turtle as t
+#
+# tim = t.Turtle()
 
 
 
