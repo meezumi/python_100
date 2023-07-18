@@ -11,7 +11,7 @@ player = Player()
 screen.listen()
 cars = CarManager()
 scoreboard = Scoreboard()
-screen.onkey(player.move, "Up")
+screen.onkeypress(player.move, "Up")
 
 game_is_on = True
 while game_is_on:
