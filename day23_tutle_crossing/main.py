@@ -32,7 +32,4 @@ while game_is_on:
         scoreboard.inc_level()
 
 
-
-
-
 screen.exitonclick()
