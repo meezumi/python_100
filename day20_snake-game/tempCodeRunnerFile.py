@@ -1,1 +1,0 @@
-self.head.setheading(UP)
