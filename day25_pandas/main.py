@@ -68,7 +68,7 @@ print(mon_feren)
 
 stud_dic = {
     "students": ["aaryan", "nedjem", "luluu"],
-    "marks": [54,67,88]
+    "marks": [54, 67, 88]
 }
 
 new_data = pandas.DataFrame(stud_dic)
