@@ -7,7 +7,7 @@ from twilio.rest import Client
 # proxy_client.session.proxies = {'https': os.environ['https_proxy']}
 # https://help.pythonanywhere.com/pages/TwilioBehindTheProxy/
 
-api_key = "bcf0b1bcbc7297b7d475d30542bd1bba"
+api_key = "my api-key"
 
 # to create an environment variable, in the bash command line:
 #     export NAME_OF_KEY={KEY}
@@ -34,8 +34,8 @@ for hour_data in weather_slice:
     if condition_code > 800:
         will_cloudy = True
 
-account_sid = 'AC5e702effd42492ad03ae74cfb1dd8f73'
-auth_token = 'ea161ca8af86feed42fb015556e2ae94'
+account_sid = 'my account_sid'
+auth_token = 'my token'
 
 if will_cloudy:
     client = Client(account_sid, auth_token)#, http_client=proxy_client)
@@ -43,7 +43,7 @@ if will_cloudy:
         .create(
         body="it might be cloudy in the next 3 hours, cloud lover :)",
         from_="+16562231718",
-        to="+919098303178"
+        to="+9158602-22"
     )
     print(message.status)
 
