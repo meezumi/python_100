@@ -73,8 +73,8 @@ if diff_percent > -1:
     # Send a separate message with each article's title and description to your phone number.
     # HINT 1: Consider using a List Comprehension.
 
-    account_sid = 'AC5e702effd42492ad03ae74cfb1dd8f73'
-    auth_token = 'fe18f4bc2e829e28449baa6515fef241'
+    account_sid = 'my sid token'
+    auth_token = 'my auth token'
 
     client = Client(account_sid, auth_token)  # , http_client=proxy_client)
     for article in formatted_articles:
@@ -83,7 +83,7 @@ if diff_percent > -1:
             .create(
             body=article,
             from_="+16562231718",
-            to="+919098303178"
+            to="+919efef124"
         )
         print(message.status)
 
