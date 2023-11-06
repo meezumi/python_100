@@ -1,0 +1,30 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+img {
+  border: 5px solid;
+  border-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+h1 {
+  color: azure;
+  font-size: 3rem;
+}
+
+p {
+  color: azure;
+}
+
+.image-handle {
+  margin-top: 5%;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  color: aliceblue;
+}
