@@ -1,0 +1,14 @@
+to create a shell script:
+
+1. [nano name_of_script.sh]
+
+2. # the first line should be:
+        [!#/bin/bash]
+# specify the code here of the program or cd into the directory where it is present.
+        ctrl+x then y to save the changes there.
+
+3. in terminal now, to make it executable we use:
+        [chmod +x name_of_script.sh]
+
+4. run the script using
+        [./name_of_script.sh]
