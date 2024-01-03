@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Library</title>
+  </head>
+  <body>
+    <h1>My Library</h1>
+    {% if not books %}
+    <p> Library is empty. </p>
+<!-- this here means if the list all_books on the server named books -->
+<!-- for html is empty then it will display this p tag-->
+    {% endif %}
+    <ul>
+      {% for book in books %}
+      <li> {{book.title}} - {{book.author}} - {{book.rating}}/10 </li>
+      {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('add') }}">Add New Book</a>
+<!--  for the click button to redirect us to /add page we add its url-->
+  </body>
+</html>
