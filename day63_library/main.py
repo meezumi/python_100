@@ -1,31 +1,42 @@
 from flask import Flask, render_template, request, redirect, url_for
 
-'''
-Red underlines? Install the required packages first: 
-Open the Terminal in PyCharm (bottom left). 
-
-On Windows type:
-python -m pip install -r requirements.txt
-
-On MacOS type:
-pip3 install -r requirements.txt
-
-This will install the packages from requirements.txt for this project.
-'''
 
 app = Flask(__name__)
 
+# data entry should be added to the list in the form of dictionary like:
+#
+# all_books = [
+#     {
+#         "title": "",
+#         "author": "",
+#         "rating": 8,
+#     }
+# ]
+
 all_books = []
+
+# if we refresh the page, stop the server and restart it, all
+# the entries will be lost, so we need a backend
+# database for data storage permanently
 
 
 @app.route('/')
 def home():
-    pass
+    return render_template("index.html", books=all_books)
 
 
-@app.route("/add")
+@app.route("/add", methods=["GET", "POST"])
 def add():
-    pass
+    if request.method == "POST":
+        new_book = {
+            "title": request.form["title"],
+            "author": request.form["author"],
+            "rating": request.form["rating"]
+        }
+        all_books.append(new_book)
+        return redirect(url_for('home'))
+
+    return render_template("add.html")
 
 
 if __name__ == "__main__":

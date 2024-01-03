@@ -2,9 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <title>Library</title>
   </head>
-  <body>
+  <body style="font-family: 'Montserrat', sans-serif;
+              margin: 50 50;
+              width: 50%;
+              padding: 10px;">
     <h1>My Library</h1>
     {% if not books %}
     <p> Library is empty. </p>
@@ -13,7 +19,13 @@
     {% endif %}
     <ul>
       {% for book in books %}
-      <li> {{book.title}} - {{book.author}} - {{book.rating}}/10 </li>
+
+      <li>
+          <a href="{{ url_for('delete', id=book.id) }}">Delete</a>
+        {{book.title}} - {{book.author}} - {{book.rating}}/10
+        <a href="{{url_for('edit', id=book.id)}}">Edit Rating</a>
+      </li>
+
       {% endfor %}
     </ul>
 

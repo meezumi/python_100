@@ -5,13 +5,15 @@
     <title>Add Book</title>
   </head>
   <body>
-    <form action="" method="POST">
+<!--  giving inputs names, so we can access their content in the .py file-->
+    <form action="{{ url_for('add') }}" method="POST">
+<!--  since we are posting input to the server, hence POST method is used-->
       <label>Book Name</label>
-      <input type="text" />
+      <input name="title" type="text" />
       <label>Book Author</label>
-      <input type="text" />
+      <input name="author" type="text" />
       <label>Rating</label>
-      <input type="text" />
+      <input name="rating" type="text" />
       <button type="submit">Add Book</button>
     </form>
   </body>
