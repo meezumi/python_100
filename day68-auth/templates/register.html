@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="box">
+	<h1>wait, who are you again?</h1>
+    <form action="{{ url_for('register') }}" method="post">
+    	<input type="text" name="name" placeholder="what are you called" required="required" />
+		<input type="email" name="email" placeholder="email, so we can write to you :)" required="required" />
+        <input type="password" name="password" placeholder="pass~, oh make this one sneaky" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">welcome aboard.</button>
+    </form>
+</div>
+
+{% endblock %}
