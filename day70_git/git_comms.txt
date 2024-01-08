@@ -1,0 +1,12 @@
+git init - to initialise git repository
+
+git status - to see the staged non-commit files or changes
+
+git add - to add files to the staging area
+
+git commit -m "enter your message here of what you are commiting"
+
+git <filename> diff - to check the current value that the file holds, to the value it did when last commit took place.
+
+git checkout <filename> - asks to roleback to the last version it was commited.
+
