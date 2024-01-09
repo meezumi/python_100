@@ -1,3 +1,7 @@
 day50 - day53 left for later.
 day64 (import error fix required ) |FIXED| (review for later)
-day69 (review for later)
+day69 (review for later) with day71
+
+
+https://github.com/MunGell/awesome-for-beginners
+for contributing to open source

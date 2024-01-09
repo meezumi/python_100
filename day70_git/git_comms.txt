@@ -2,11 +2,54 @@ git init - to initialise git repository
 
 git status - to see the staged non-commit files or changes
 
-git add - to add files to the staging area
+git add - to add files to the staging area 
+git add . to commit all the changes and files to staging 
 
 git commit -m "enter your message here of what you are commiting"
 
 git <filename> diff - to check the current value that the file holds, to the value it did when last commit took place.
 
 git checkout <filename> - asks to roleback to the last version it was commited.
+
+to link up a local repo to a remote repo on github, we use the command - 
+
+git remote add origin <link of the remote repository here>
+
+git push origin main -u 
+
+CLONING ////////////
+
+to clone a repository, we use 
+
+git clone <http address of the remote repo you wan to clone>
+
+for example we using: https://github.com/inolen/quakejs
+
+git clone https://github.com/inolen/quakejs.git 
+
+BRANCHING AND MERGING //////////////////
+
+to start a new branch, apart from main (default):
+
+git branch <branch_name>
+
+to check the number of branches in the repo:
+
+git branch 
+
+to which to another branch we use:
+
+git checkout <branch_name>
+
+to merge the changes made in the new branch to the main branch, we can:
+(you have to be on the main branch to merge)
+
+git merge <branch_name>
+
+to learn more about branching: 
+https://learngitbranching.js.org/
+
+FORKING AND PULLING REQUESTS:
+
+copying is different than cloning, and is known as forking. 
 
