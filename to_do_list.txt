@@ -5,3 +5,6 @@ day69 (review for later) with day71
 
 https://github.com/MunGell/awesome-for-beginners
 for contributing to open source
+
+NOTE: 
+from day73 onwards, storing the jupyter notebook files as .py to reduce space (ipynb files are located in my drive)
